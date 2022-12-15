@@ -27,13 +27,16 @@
         </header>
 
         <section>
-             <div class="loc">
-                <i class="fa-solid fa-location-dot"></i> 
-                    <p>Marseille, France </p>
-                        <div id="buton"> Rechercher</div>
-            </div>
 
-                <div class="filtres">
+            <form action="" method="post">
+             
+                <i class="fa-solid fa-location-dot"></i> 
+                    <input type="text" name="lieu" id="lieu" placeholder="Marseille, France">
+                    <input type="submit" id="rechercher" value="Rechercher">
+            
+            </form>
+            
+                <div id="filtres">
                     <h3>Filtres</h3>
                     <div class="filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</div>
                     <div class="filtre"><i class="fa-solid fa-person"></i>Familiale</div>
