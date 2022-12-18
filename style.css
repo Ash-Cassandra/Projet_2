@@ -1,11 +1,14 @@
+#bloc-page
+{
+    margin: 0 50px;
+}
 body
 {
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     max-width: 1400px;
     width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin: auto;
 }
 
 /* header */
@@ -13,6 +16,7 @@ body
 #logo_booki
 {  
     height: 19px;
+    margin-top: 50px;
 }
 
 .menu
@@ -30,14 +34,41 @@ body
     gap: 30px;
 }
 
-.menu_list a:hover
-{
-     border-top: 2px solid #0065FC;
-}
-
 ul
 {
     list-style-type: none;
+}
+
+#menu_hebergement 
+{
+    border-top: 3px solid transparent;
+    padding: 30px 0;
+}
+#menu_hebergement:hover
+{
+    border-top-color:#0065FC;      
+}
+
+#menu_activite
+{   
+    border-top: 3px solid transparent;
+    padding: 30px 0;
+}
+#menu_activite:hover
+{
+    border-top-color:#0065FC;
+}
+
+
+a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+ul a:hover
+{
+    color: #0065FC;
 }
 
 h1
@@ -97,9 +128,10 @@ form
     border-radius: 0px 15px 15px 0px;
     padding-left: 10px;
     font-size: 18px;
-    font-style: bold ;
+    font-weight: bold ;
     color: #FFFFFF;
-    text-align: center; 
+    text-align: center;
+
 }
 
 #filtres
@@ -161,7 +193,7 @@ form
 
 aside
 {
-    width: 420px;
+    width: 410px;
     height: 625px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
@@ -171,9 +203,15 @@ aside
     align-items: center;
     gap: 10px;
     float: right;
-    margin-top: 50px;
 }
-
+#titre_heb_pop
+{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    align-items: center;
+    
+}
 aside i
 {
     color: #0065FC;
@@ -183,11 +221,16 @@ aside i
 {
     background-color: #FFFFFF;
     border-radius: 20px;
-    margin: 10px;
     height: 144px;
     width: 343px;  
     padding-bottom: 10px;
     font-size: 14px;
+    line-height: 1.9;
+}
+
+.box_hebergement_pop p
+{
+    padding-top: 2px;
 }
 
 .box_hebergement_pop img
@@ -197,9 +240,21 @@ aside i
     width: 36%;
     border-radius: 20px 0px 0px 20px;
     padding: 5px;
+    margin-right: 15px;
     float: left;
     object-fit: cover;
     box-shadow: 0px 3px 15px #D9D9D9;   
+}
+
+.stars 
+{
+    margin-top: 50px;
+
+}
+
+.star2
+{
+    margin-top: 20px;
 }
 
 /* hebergements a marseille */
@@ -209,7 +264,7 @@ aside i
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 626px;
-    width: 880px;
+    width: 870px;
     margin-top: 50px;
 }
 
@@ -231,6 +286,7 @@ aside i
     padding: 5px;
     font-size: 14px;
     box-shadow: 0px 3px 15px #D9D9D9;
+    line-height: 1.5;
 }
 
 #hebergements img
@@ -247,9 +303,11 @@ aside i
     padding-top: 30px;
 }
 
-.show_more
+button
 {
+    border: none;
     font-weight: bold;
+    font-size: 18px;
     text-align: left;
     padding-left: 30px;
     padding-top: 30px;
@@ -265,15 +323,16 @@ aside i
 }
 
 /* activites a marseille */
-
+#all_activities
+{
+    margin-top: 50px;
+}
 #activities
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 5%;
+    justify-content: space-between;
     border-radius: 20px;
-    margin: 5%;
 }
 
 .box_activity img
@@ -298,15 +357,52 @@ aside i
     padding-left: 2%;
     padding-bottom: 2%;
     font-size: 19px;
-    font-weight: 700px;
+    font-weight: bold;
 }
 
 /* footer */
 
 footer
 {
+    margin-top: 60.25px;
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding-bottom: 58px;
+    
 }
 
+footer p
+{
+    line-height: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* changer la div stars sur les box hebergment pop */
