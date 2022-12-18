@@ -204,14 +204,15 @@ aside
     gap: 10px;
     float: right;
 }
+
 #titre_heb_pop
 {
     display: flex;
     flex-direction: row;
     gap: 150px;
     align-items: center;
-    
 }
+
 aside i
 {
     color: #0065FC;
@@ -382,6 +383,86 @@ footer p
 
 
 
+/* version tablette */
+
+@media screen and (max-width: 992px) {
+
+#bloc-page
+{
+    margin: 0 72px;
+}
+
+body
+{
+
+    max-width: 992px;
+    width: 100%;
+    margin: auto;
+}
+
+#filtres
+{
+    gap: 34px;
+}
+
+section:nth-of-type(2) 
+{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 53px;
+}
+
+aside
+{
+    width: 883px;
+    height: 278px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#titre_heb_pop
+{
+    position: absolute;
+    top :1105px;
+    left: 110px;
+    gap: 600px;
+}
+
+
+.box_hebergement_pop
+{
+    height: 144px;
+    width: 252px;  
+}
+
+.box_activity
+{
+    width: 182px;
+    height: 267px;
+}
+
+.box_activity img
+{
+    height: 211px;
+    width: 182px; 
+    object-fit: cover;
+}
+
+.box_activity p
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stars
+{
+    margin-top: 20px;
+}
+
+
+}
 
 
 
@@ -404,5 +485,3 @@ footer p
 
 
 
-
-/* changer la div stars sur les box hebergment pop */
