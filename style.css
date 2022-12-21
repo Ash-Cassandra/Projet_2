@@ -41,7 +41,7 @@ ul {
 }
 
 #menu_hebergement:hover {
-    border-top-color:#0065FC;    
+    border-top-color:#0065FC;  
 }
 
 #menu_activite {   
@@ -105,13 +105,12 @@ form {
     text-align: center;  
 }
 
-.search-submit {
+.search-submit, .magnifying_glass {
     height: 49px;
     width: auto;
     background-color: #0065FC;
     border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    padding-left: 10px;
+    border-radius: 0px 15px 15px 0px;   
     font-size: 18px;
     font-weight: bold ;
     color: #FFFFFF;
@@ -119,12 +118,13 @@ form {
     cursor: pointer;
 }
 
-.search-text {
+.search-submit {
     display: flex;
 }
 
-.fa-magnifying-glass {
+.magnifying_glass {
     display: none;
+
 }
 
 #filtres {
@@ -153,6 +153,7 @@ form {
 
 .filtre:hover {
     background-color: #DEEBFF;
+    cursor: pointer;
 }
 
 .fa-info {
@@ -440,7 +441,7 @@ body {
 #logo_booki {  
   height: 19px;
   width: auto;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 .menu_list {   
@@ -451,7 +452,8 @@ body {
 
 #menu_hebergement:hover {
     border-top:none;
-    border-bottom-color:#0065FC;      
+    border-bottom-color:#0065FC;
+    pad     
 }
 
 #menu_activite:hover {
@@ -468,12 +470,16 @@ form {
     margin: 0 auto;
 }
 
-p.search-text {
+input[value] {
     display: none;
 }
 
-i.search-text {
+.magnifying_glass {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
     color: #FFFFFF;
 }
 
@@ -597,11 +603,7 @@ footer p {
     line-height: 2;
 }
 
-
-
-
 }
-
 
 
 
