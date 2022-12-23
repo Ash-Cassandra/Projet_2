@@ -11,6 +11,10 @@ body {
     margin: auto;
 }
 
+.image-cards {
+    width: 100% ;
+}
+
 /* header */
 
 #logo_booki {  
@@ -81,7 +85,7 @@ h3 {
 
 form { 
     height: 49px;
-    width: 342px;
+    width: 32%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -98,8 +102,8 @@ form {
 }
 
 #lieu {
-    height: 47px;
-    width: 252px;
+    height: 100%;
+    width: 100%;
     border: none;
     font-size: 14px;
     font-weight: bold;
@@ -133,8 +137,8 @@ form {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 5%;
-    margin-top: 25px;
+    gap: 3%;
+    margin: 25px 0;
 }
 
 #filtres i {
@@ -179,17 +183,23 @@ form {
 
 /* hebergements populaires a marseille*/
 
+section:nth-of-type(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
 aside {
-    width: 410px;
+    width: 30%;
     height: 625px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     gap: 10px;
-    float: right;
 }
 
 #titre_heb_pop {
@@ -204,37 +214,31 @@ aside i {
 }
 
 .box_hebergement_pop {
+    position:relative;
     background-color: #FFFFFF;
     border-radius: 20px;
-    height: 144px;
-    width: 343px;  
-    padding-bottom: 10px;
+    height: 25%;
+    width: 80%;  
     font-size: 14px;
     line-height: 1.9;
-}
-
-.box_hebergement_pop p {
-    padding-top: 2px;
+    box-shadow: 0px 3px 15px #D9D9D9; 
 }
 
 .box_hebergement_pop img {
-    max-width: 95%; 
-    height: 144px;
+     
+    height: 93%;
     width: 36%;
     border-radius: 20px 0px 0px 20px;
     padding: 5px;
-    margin-right: 15px;
     float: left;
     object-fit: cover;
-    box-shadow: 0px 3px 15px #D9D9D9;   
+      
 }
 
 .stars  {
-    margin-top: 50px;
-}
-
-.star2 {
-    margin-top: 20px;
+    position: absolute;
+    bottom: 2%;
+    right: 25%;
 }
 
 /* hebergements a marseille */
@@ -243,8 +247,7 @@ aside i {
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 626px;
-    width: 870px;
-    margin-top: 50px;
+    width: 60%;
 }
 
 #all_boxes {
@@ -258,8 +261,8 @@ aside i {
     background-color: #FFFFFF;
     border-radius: 20px;
     margin: 10px;
-    height: 199px;
-    width: 246px;
+    height: auto;
+    width: 27%;
     padding: 5px;
     font-size: 14px;
     box-shadow: 0px 3px 15px #D9D9D9;
@@ -268,14 +271,13 @@ aside i {
 
 #hebergements img {
     object-fit: cover;
-    width: 246px;
     height: 124px;
     border-radius: 20px 20px 0 0;
 }
 
 #hebergements h1 {
     margin-left: 40px;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 
 button {
@@ -283,8 +285,7 @@ button {
     font-weight: bold;
     font-size: 18px;
     text-align: left;
-    padding-left: 30px;
-    padding-top: 30px;
+    padding: 30px;
 }
 
 .fa-blue {
@@ -309,7 +310,6 @@ button {
 }
 
 .box_activity img {
-    width: 302px;
     height: 389px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -318,14 +318,16 @@ button {
 .box_activity {
     background-color: #FFFFFF;
     border-radius: 20px;
-    width: 302px;
+    width: 22%;
     height: 444.51px;
     box-shadow: 0px 3px 15px #D9D9D9;
+    position: relative;
 }
 
 .box_activity p {
-    padding-left: 2%;
-    padding-bottom: 2%;
+    position: absolute;
+    left: 5%;
+    top: 88%;
     font-size: 19px;
     font-weight: bold;
 }
@@ -421,7 +423,7 @@ aside {
 @media  (width <= 768px) {
     
  #bloc-page {
-    margin: 0 21px;
+    margin: 0;
 }
 
 body {
