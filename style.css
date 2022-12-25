@@ -39,23 +39,23 @@ ul {
     list-style-type: none;
 }
 
-#menu_hebergement  {
+#menu_lodging  {
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     padding: 30px 0;
 }
 
-#menu_hebergement:hover {
+#menu_lodging:hover {
     border-top-color:#0065FC;  
 }
 
-#menu_activite {   
+#menu_activity {   
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     padding: 30px 0;
 }
 
-#menu_activite:hover {
+#menu_activity:hover {
     border-top-color:#0065FC;
 }
 
@@ -102,7 +102,7 @@ form {
     padding: 15px;
 }
 
-#lieu {
+#location {
     height: 100%;
     width: 100%;
     border: none;
@@ -129,10 +129,9 @@ form {
 
 .magnifying_glass {
     display: none;
-
 }
 
-#filtres {
+#filters {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -141,11 +140,11 @@ form {
     margin: 25px 0;
 }
 
-#filtres i {
+#filters i {
     color: #0065FC;
 }
 
-.filtre {
+.filter {
     display: flex;
     align-items: center;
     font-size: 17px;
@@ -156,7 +155,7 @@ form {
     gap: 8px;   
 }
 
-.filtre:hover {
+.filter:hover {
     background-color: #DEEBFF;
     cursor: pointer;
 }
@@ -172,6 +171,7 @@ form {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-bottom: 20px;
 }
 
 /* nom de tous les logements */
@@ -198,6 +198,18 @@ aside {
     position: relative; 
 }
 
+#title_lodging_pop h1{
+    position: absolute;
+    top: 7px;
+    left: 10px; 
+}
+
+#title_lodging_pop .fa-chart-line {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+ }
+
 #all_boxes_pop {
     width: 100%;
     height: 85%;
@@ -210,34 +222,26 @@ aside {
     gap: 10px;
 }
 
-#titre_heb_pop h1{
-    position: absolute;
-    top: 2%;
-    left: 2%; 
+#all_boxes_pop .lodging_name {
+    line-height: 1;
 }
-
-#titre_heb_pop i {
-    position: absolute;
-    top: 6%;
-    right: 2%;
- }
 
 aside i {
     color: #0065FC;
 }
 
-.box_hebergement_pop {
+.box_lodging_pop {
     position:relative;
     background-color: #FFFFFF;
     border-radius: 20px;
     height: 28%;
     width: 80%;  
     font-size: 14px;
-    line-height: 1.9;
+    line-height:1.5;
     box-shadow: 0px 3px 15px #D9D9D9; 
 }
 
-.box_hebergement_pop img {
+.box_lodging_pop img {
      
     height: 93%;
     width: 36%;
@@ -251,26 +255,26 @@ aside i {
 .stars  {
     position: absolute;
     bottom: 2%;
-    right: 25%;
+    left: 40%;
 }
 
 /* hebergements a marseille */
 
-#hebergements {   
+#lodging {   
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 626px;
     width: 60%;
 }
 
-#all_boxes {
+#all_boxes_lodg {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.box_hebergement {
+.box_lodging {
     background-color: #FFFFFF;
     border-radius: 20px;
     margin: 10px;
@@ -282,13 +286,13 @@ aside i {
     line-height: 1.5;
 }
 
-#hebergements img {
+#lodging img {
     object-fit: cover;
     height: 124px;
     border-radius: 20px 20px 0 0;
 }
 
-#hebergements h1 {
+#lodging h1 {
     margin-left: 40px;
     margin-top: 30px;
 }
@@ -302,6 +306,7 @@ button {
 }
 
 .fa-blue {
+
     color: #0065FC;
 }
 
@@ -340,7 +345,7 @@ button {
 .box_activity p {
     position: absolute;
     left: 5%;
-    top: 88%;
+    top: 86%;
     font-size: 19px;
     font-weight: bold;
 }
@@ -373,7 +378,7 @@ body {
     margin: auto;
 }
 
-#filtres {
+#filters {
     gap: 24px;
 }
 
@@ -383,7 +388,7 @@ section:nth-of-type(2) {
     gap: 53px;
 }
 
-#hebergements {
+#lodging {
     width: 100%;
     margin-top: 5%;
 }
@@ -404,19 +409,7 @@ aside {
     margin-bottom: 40px;
 }
 
-#titre_heb_pop h1{
-    position: absolute;
-    top: 2%;
-    left: 2%; 
-}
-
-#titre_heb_pop i {
-    position: absolute;
-    top: 10%;
-    right: 2%;
- }
-
-.box_hebergement_pop {
+.box_lodging_pop {
     width: 30%;
     height: 100%;
     margin-top: 20px;
@@ -438,7 +431,7 @@ aside {
 
 .box_activity p {
     position: absolute;
-    top: 73%;
+    top: 72%;
 }
 }
 
@@ -481,22 +474,22 @@ body {
     padding: 0;
 }
 
-#menu_hebergement {
+#menu_lodging {
     text-align: center;
     width: 50%;
 }
 
-#menu_hebergement:hover {
+#menu_lodging:hover {
     border-top:none;
     border-bottom-color:#0065FC;    
 }
 
-#menu_activite {
+#menu_activity {
     text-align: center;
     width: 50%;
 }
 
-#menu_activite:hover {
+#menu_activity:hover {
     border-top: none;
     border-bottom-color: #0065FC;
 }
@@ -524,7 +517,7 @@ header h1,h2 {
     margin-left: 21px;
 }
 
-#filtres {
+#filters {
     height: 190px;
     width: 95%;
     display: grid;
@@ -534,11 +527,11 @@ header h1,h2 {
     margin: auto;
 }
 
-.filtre {
+.filter {
     height: 30px;
 }
 
-#filtre h3 {
+#filter h3 {
     grid-row:1;
     grid-column: 1;
 }
@@ -586,32 +579,32 @@ aside {
     width: 100%;
 }
 
-#box_hebergement_pop {
+#box_lodging_pop {
     width: 100%;
 }
 
 /* hebergement a marseille smartphone */
 
-#hebergements {   
+#lodging {   
     background-color: #FFFFFF;
     width: 100%;
     height: auto;
 }
 
-#all_boxes {
+#all_boxes_lodg {
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 90%;
 }
 
-.box_hebergement {
+.box_lodging {
     height: 199px;
     width: 95%;
     padding: 5px;
 }
 
-#hebergements img {
+#lodging img {
     
     width: 100%;
     height: 124px;
