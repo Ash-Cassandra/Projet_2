@@ -70,6 +70,7 @@ ul a:hover {
 
 h1 {
     font-size: 22px;
+    font-weight: bold;
 }
 
 h2 {
@@ -117,7 +118,6 @@ form {
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;   
     font-size: 18px;
-    font-weight: bold ;
     color: #FFFFFF;
     text-align: center;
     cursor: pointer;
@@ -195,6 +195,14 @@ aside {
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 20px;
+    position: relative; 
+}
+
+#all_boxes_pop {
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -202,12 +210,17 @@ aside {
     gap: 10px;
 }
 
-#titre_heb_pop {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+#titre_heb_pop h1{
+    position: absolute;
+    top: 2%;
+    left: 2%; 
 }
+
+#titre_heb_pop i {
+    position: absolute;
+    top: 6%;
+    right: 2%;
+ }
 
 aside i {
     color: #0065FC;
@@ -217,7 +230,7 @@ aside i {
     position:relative;
     background-color: #FFFFFF;
     border-radius: 20px;
-    height: 25%;
+    height: 28%;
     width: 80%;  
     font-size: 14px;
     line-height: 1.9;
@@ -346,7 +359,7 @@ footer p {
     line-height: 2;
 }
 
-/* version tablette */
+/* ----------------------- version tablette --------------------- */
 
 @media  (768px < width <=992px) {
 
@@ -378,9 +391,17 @@ section:nth-of-type(2) {
 aside {
     width: 100%;
     height: 278px;
+    position: relative;
+    
+}
+
+#all_boxes_pop {
+    width: 95%;
+    height: 55%;
     display: flex;
     flex-direction: row;
-    position: relative;
+    justify-content: space-around;
+    margin-bottom: 40px;
 }
 
 #titre_heb_pop h1{
@@ -396,8 +417,8 @@ aside {
  }
 
 .box_hebergement_pop {
-    height: 60%;
     width: 30%;
+    height: 100%;
     margin-top: 20px;
     position: relative;
 }
@@ -422,7 +443,9 @@ aside {
 }
 
 
-/* version smartphone */
+/* ------------------------ version smartphone ----------------------- */
+
+
 
 @media  (width <=768px) {
     
@@ -557,15 +580,14 @@ section:nth-last-of-type(2) {
 aside {
     width: 100%;
     border-radius: 0px;
-    
+}
+
+#all_boxes-pop {
+    width: 100%;
 }
 
 #box_hebergement_pop {
-    width: 98%;
-}
-
-#titre_heb_pop {
-    width: 90%;
+    width: 100%;
 }
 
 /* hebergement a marseille smartphone */
@@ -647,7 +669,7 @@ footer {
 }
 
 h3 {
-    width: 70%;
+  
     margin-right: 0;
 }
 
