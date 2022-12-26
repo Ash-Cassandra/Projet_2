@@ -523,8 +523,8 @@ input[value] {
     color: #FFFFFF;
 }
 
-header h1,p {
-    width: 100%;
+header h1,.title-text {
+    width: 90%;
     margin-left: 21px;
 }
 
@@ -572,7 +572,7 @@ header h1,p {
     margin: 43px auto;
 }
 
-/* section n2 smartphone */
+/* section n°2 smartphone */
 
 section:nth-last-of-type(2) {
     display: flex;
@@ -586,12 +586,8 @@ aside {
     border-radius: 0px;
 }
 
-#all-boxes-pop {
-    width: 100%;
-}
-
-#box-lodging-pop {
-    width: 100%;
+.box-lodging-pop {
+    width: 90%;
 }
 
 /* hebergement a marseille smartphone */
@@ -605,13 +601,14 @@ aside {
 #all-boxes-lodg {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
     margin: auto;
-    width: 90%;
 }
 
 .box-lodging {
     height: 199px;
-    width: 95%;
+    width: 90%;
     padding: 5px;
 }
 
@@ -633,10 +630,8 @@ button {
     height: auto;
 }
 
-#all-activities h1 {
-    width: 200px;
-    height: auto;
-    margin-left: 21px;
+h2 {
+    margin-left: 22px;
 }
 
 #activities {
@@ -669,15 +664,11 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-left: 20px;
+    
 }
 
-h3 {
-  
-    margin-right: 0;
+article {
+    margin-left: 20px;
 }
 
-footer p {
-    line-height: 2;
-}
 }
