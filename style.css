@@ -78,6 +78,15 @@ h1 {
     font-weight: normal;
 }
 
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+section:nth-of-type(2) h2 {
+    margin-left: 20px;
+}
+
 h3 {
     font-size: 18px;
 }
