@@ -13,6 +13,7 @@ body {
 
 .image-cards {
     width: 100% ;
+    object-fit: cover;
 }
 
 /* header */
@@ -257,9 +258,7 @@ aside i {
     width: 36%;
     border-radius: 20px 0px 0px 20px;
     padding: 5px;
-    float: left;
-    object-fit: cover;
-      
+    float: left;  
 }
 
 .stars  {
@@ -297,7 +296,6 @@ aside i {
 }
 
 #lodging img {
-    object-fit: cover;
     height: 124px;
     border-radius: 20px 20px 0 0;
 }
@@ -339,7 +337,6 @@ button {
 
 .box-activity img {
     height: 389px;
-    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
@@ -510,7 +507,7 @@ form {
     margin: 36px auto;
 }
 
-input[value] {
+.search-submit {
     display: none;
 }
 
