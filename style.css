@@ -55,6 +55,9 @@ ul {
 
 #menu-lodging:hover {
     border-top-color:#0065FC;
+}
+
+#menu-lodging:hover a {
     color: #0065FC;
 }
 
@@ -66,6 +69,9 @@ ul {
 
 #menu-activity:hover {
     border-top-color:#0065FC;
+}
+
+#menu-activity:hover a{
     color: #0065FC;
 }
 
