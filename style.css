@@ -16,6 +16,10 @@ body {
     object-fit: cover;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
 /* header */
 
 #logo-booki {  
@@ -34,7 +38,9 @@ body {
     flex-direction: row;
     margin: 0;
     gap: 30px;
+    color: #0065FC;
 }
+
 
 ul {
     list-style-type: none;
@@ -48,7 +54,8 @@ ul {
 }
 
 #menu-lodging:hover {
-    border-top-color:#0065FC;  
+    border-top-color:#0065FC;
+    color: #0065FC;
 }
 
 #menu-activity {   
@@ -59,14 +66,6 @@ ul {
 
 #menu-activity:hover {
     border-top-color:#0065FC;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-}
-
-ul a:hover {
     color: #0065FC;
 }
 
