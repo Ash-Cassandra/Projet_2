@@ -493,7 +493,6 @@ body {
 }
 
 #menu-lodging:hover {
-    border-top:none;
     border-bottom-color:#0065FC;    
 }
 
@@ -531,6 +530,7 @@ header h1,.title-text {
 }
 
 #filters {
+    max-width: 375px;
     height: 190px;
     width: 95%;
     display: grid;
