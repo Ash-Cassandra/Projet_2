@@ -151,6 +151,7 @@ form {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
     gap: 3%;
     margin: 25px 0;
@@ -372,8 +373,10 @@ footer {
     justify-content: space-around;
 }
 
-footer p {
+footer ul {
     line-height: 2;
+    padding-left: 0;
+    
 }
 
 /* ----------------------- version tablette --------------------- */
@@ -392,6 +395,10 @@ body {
 
 #filters {
     gap: 24px;
+}
+
+.filter {
+    white-space: nowrap;
 }
 
 section:nth-of-type(2) {
@@ -488,7 +495,7 @@ body {
 }
 
 #menu-lodging:hover {
-    border-top: none;
+    border-top: transparent;
     border-bottom-color:#0065FC;    
 }
 
@@ -498,7 +505,7 @@ body {
 }
 
 #menu-activity:hover {
-    border-top: none;
+    border-top-color: transparent;
     border-bottom-color: #0065FC;
 }
 
@@ -538,6 +545,8 @@ header h1,.title-text {
 
 .filter {
     height: 30px;
+    white-space: nowrap;
+    font-size: 11px;
 }
 
 #filter h3 {
@@ -648,7 +657,7 @@ h2 {
 }
 
 .box-activity p {
-    top: 75%;
+    top: 65%;
 }
 
 /*footer*/
