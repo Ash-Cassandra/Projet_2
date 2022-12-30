@@ -413,7 +413,7 @@ aside {
 }
 
 #all-boxes-pop {
-    width: 95%;
+    width: 96%;
     height: 55%;
     display: flex;
     flex-direction: row;
@@ -427,11 +427,6 @@ aside {
     margin-top: 20px;
     line-height: 1.5;
     position: relative;
-}
-
-.stars {
-    position: absolute;
-    right: 15%;
 }
 
 .box-activity img{
