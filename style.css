@@ -488,6 +488,7 @@ body {
 }
 
 #menu-lodging:hover {
+    border-top: none;
     border-bottom-color:#0065FC;    
 }
 
