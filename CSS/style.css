@@ -112,6 +112,7 @@ form {
 }
 
 .fa-location-dot {
+    height: 20px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
