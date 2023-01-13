@@ -11,10 +11,7 @@ body {
     margin: auto;
 }
 
-.image-cards {
-    width: 100% ;
-    object-fit: cover;
-}
+
 
 a {
     color: #000;
@@ -88,7 +85,7 @@ h2 {
 }
 
 section:nth-of-type(2) h2 {
-    margin-left: 20px;
+    margin: 20px;
 }
 
 form { 
@@ -209,75 +206,58 @@ section:nth-of-type(2) {
 }
 
 article {
-    width: 30%;
-    height: 625px;
-    background-color: #F2F2F2;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px;
-    position: relative; 
-}
-
-#title-lodging-pop h1{
-    position: absolute;
-    top: 7px;
-    left: 10px; 
-}
-
-#title-lodging-pop .fa-chart-line {
-    position: absolute;
-    top: 25px;
-    right: 10px;
- }
-
-#all-boxes-pop {
-    width: 100%;
-    height: 85%;
-    position: absolute;
-    bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
+    width: 30%;
+    height: 625px;
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;  
 }
 
-#all-boxes-pop .lodging-name {
-    line-height: 1;
+figure {
+    margin: 0;
+}
+.box-pop {
+    height: 26%;
+    width: 93%;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    border-radius: 20px; 
+    font-size: 14px;
+    box-shadow: 0px 3px 15px #D9D9D9;
+    position: relative; 
 }
 
+.image-cards-pop {
+    height: 93%;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    padding: 5px;
+    float: left; 
+}
+
+figcaption {
+    
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+ .stars {
+    position: absolute;
+    bottom: 5%;
+ }
 article i {
     color: #0065FC;
 }
 
-.box-lodging-pop {
-    position:relative;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    height: 28%;
-    width: 80%;  
-    font-size: 14px;
-    line-height:2;
-    box-shadow: 0px 3px 15px #D9D9D9; 
-}
-
-.box-lodging-pop img {
-     
-    height: 93%;
-    width: 36%;
-    border-radius: 20px 0px 0px 20px;
-    padding: 5px;
-    float: left;  
-}
-
-.stars  {
-    position: absolute;
-    bottom: 2%;
-    left: 40%;
-}
-
 /* hebergements a marseille */
 
-#lodging {   
+.lodging {   
     background-color: #F2F2F2;
     border-radius: 20px;
     height: 626px;
@@ -303,12 +283,12 @@ article i {
     line-height: 1.5;
 }
 
-#lodging img {
+.lodging img {
     height: 124px;
     border-radius: 20px 20px 0 0;
 }
 
-#lodging h1 {
+.lodging h1 {
     margin-left: 40px;
     margin-top: 30px;
 }
@@ -403,7 +383,7 @@ section:nth-of-type(2) {
     gap: 53px;
 }
 
-#lodging {
+.lodging {
     width: 100%;
     margin-top: 5%;
 }
@@ -595,7 +575,7 @@ article {
 
 /* hebergement a marseille smartphone */
 
-#lodging {   
+.lodging {   
     background-color: #FFFFFF;
     width: 100%;
     height: auto;
@@ -615,7 +595,7 @@ article {
     padding: 5px;
 }
 
-#lodging img {
+.lodging img {
     height: 124px;
     border-radius: 20px 20px 0 0;
 }
