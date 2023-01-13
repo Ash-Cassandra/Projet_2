@@ -17,8 +17,8 @@
             <nav class="menu">
                 <img src="Images/logo/Booki.png" id="logo-booki" alt="logo booki">
                     <ul class="menu-list">              
-                        <li id="menu-lodging"><a href="#lodging">Hébergements</a></li>
-                        <li id="menu-activity"><a href="#activities">Activités</a></li>
+                        <li class="menu-lodging"><a href="#all-lodging">Hébergements</a></li>
+                        <li class="menu-activity"><a href="#all-activities">Activités</a></li>
                     </ul>
             </nav> 
 
@@ -53,12 +53,14 @@
             </section>
 
 <!---section 2 hebergements--->
-            <section>
+            <section id="all-lodging">
 
-                <article>     
-                    <h2 class="title-lodging-pop">Les plus populaires  
-                    <i class="fa-solid fa-chart-line"></i> </h2>
-
+                <article>
+                    <header class="title-lodging-pop">  
+                    <h2 >Les plus populaires</h2>  
+                    <i class="fa-solid fa-chart-line"></i> 
+                    </header>
+                    <section class="all-boxes-pop">
                         <a href="#" class="box-pop">
                             <figure >
                                 <img src="Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" class="image-cards-pop" alt="logement de Emile">
@@ -109,6 +111,7 @@
                                 </figcaption>
                             </figure>
                         </a>
+                    </section>
                 </article>
 
         
@@ -224,50 +227,48 @@
             </section>
 
 <!---section 3 activités--->      
-            <section>
-                <div id="all-activities">
-        
+            <section id="all-activities">
+            
                     <h2>Activités à Marseille</h2>
-
-                    <div id="activities">
+                    <div class="activities">
 
                         <a href="#" class="box-activity">
-                         
-                            <img src="Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="image-cards" alt="photo du vieu port">
-                                <div class="lodging-name">
-                                    <p>Vieux-Port</p>
-                                </div>
-                        
+                            <figure>
+                                <img src="Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="image-cards" alt="photo du vieu port">
+                                <figcaption>
+                                Vieux-Port
+                                </figcaption>
+                            </figure>
                         </a>
             
                         <a href="#" class="box-activity">
-                         
-                            <img src="Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="image-cards" alt="photo fort de pomegues">
-                                <div class="lodging-name">
-                                    <p>Fort de Pomègues</p>
-                                </div>
-                        
+                            <figure>
+                                <img src="Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="image-cards" alt="photo fort de pomegues">
+                                <figcaption>
+                                Fort de Pomègues
+                                </figcaption>
+                            </figure>
                         </a>
 
                         <a href="#" class="box-activity">
-                         
-                            <img src="Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="image-cards" alt="photo des Calanques">
-                                <div class="lodging-name">
-                                    <p>Parc national des Calanques</p>
-                                </div>
-                        
+                            <figure>
+                                <img src="Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="image-cards" alt="photo des Calanques">
+                                <figcaption>
+                                Parc national des Calanques
+                                </figcaption>
+                            </figure>
                         </a>
 
                         <a href="#" class="box-activity">
-                         
-                            <img src="Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="image-cards" alt="photo notre dame de la garde">
-                                <div class="lodging-name">
-                                    <p>Notre-Dame-de-la-Garde</p>
-                                </div>
-                        
+                            <figure> 
+                                <img src="Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="image-cards" alt="photo notre dame de la garde">
+                                <figcaption>
+                                Notre-Dame-de-la-Garde
+                                </figcaption>
+                            </figure>
                         </a>
                     </div>
-                </div>
+                
             </section>
 
 
@@ -277,30 +278,30 @@
 
         <footer>
             
-            <div class="global-info">
+            <section class="global-info">
                 <h3>A propos</h3>
                     <ul>
                        <li><a href="#">Fonctionnement du site</a></li>
                         <li><a href="#">Conditions générales</a></li> 
                         <li><a href="#">Données et confidentialité</a></li>
                     </ul>
-            </div>
+            </section>
 
-            <div class="global-info">
+            <section class="global-info">
                 <h3>Nos hébergements</h3>
                     <ul>
                        <li><a href="#">Charte qualité</a></li>
                         <li><a href="#">Proposer votre hôtel</a></li>
                     </ul>
-            </div>
+            </section>
 
-            <div class="global-info">
+            <section class="global-info">
                 <h3>Assistance</h3>
                     <ul>
                         <li><a href="#">Centre d’aide</a></li>
                         <li><a href="#">Nous contacter</a></li>
                     </ul>
-            </div>
+            </section>
             
         </footer>
     </div>
