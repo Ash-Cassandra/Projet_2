@@ -201,7 +201,7 @@ form {
  display: flex;
  flex-direction: row;
  position: relative;
- margin-left: 15px;
+ margin-left: 35px;
 }
 .fa-chart-line {
     position: absolute;
@@ -209,12 +209,11 @@ form {
     right: 15px;
 }
 
-article {
+.lodging-pop {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 30%;
-    height: 625px;
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 20px;  
@@ -224,20 +223,20 @@ article {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-   margin:  20px auto;
+    margin:  20px auto;
     width: 91%;
     height: 90%;
 }
 
-figure {
+a figure {
     margin: 0;
+    width: 100%;
 }
 
-.box-pop {
+a.box-pop {
     display: flex;
     flex-direction: row;
-    height: 35%;
-    max-height: 144px;
+    height: 30%;
     width: 91%;
     background-color: #FFFFFF;
     border-radius: 20px; 
@@ -248,7 +247,7 @@ figure {
 
 .image-cards-pop {
     height: 93%;
-    width: 110px;
+    width: 35%;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
     padding: 5px;
@@ -284,6 +283,8 @@ article i {
     flex-wrap: wrap;
     justify-content: space-around;
     height: 70%;
+    position: absolute;
+    top: 100px;
 }
 
 .box-lodging {
@@ -396,23 +397,20 @@ body {
 .lodging {
     width: 100%;
 }
-article {
+.lodging-pop {
     width: 100%;
     height: 278px;
 }
 .all-boxes-pop {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 30px;
     align-items: center;
     margin-top: 0;
 }
-.box-pop {
-    width: 30%;
-    height: 100%;
-}
-.box-pop img {
-    width: 35%;
+a.box-pop {
+    width: 32%;
+    height: 80%;
 }
 .box-activity img{
     height: 211px;
@@ -420,9 +418,10 @@ article {
 .box-activity {
     height: 267px;
 }
-.box-activity p {
+.box-activity figcaption {
+    font-size: 16px;
     position: absolute;
-    top: 72%;
+    bottom: 4%;
 }
 }
 
@@ -543,85 +542,69 @@ header h1,.title-text {
 .info {
     margin: 20px;
 }
-/* section n°2 smartphone */
-
+/* section n°2 smartphon.e */
 #all-lodging {
     display: flex;
     flex-direction: column;
 }
-
-/* hebergement populaire marseille smartphone*/
-
-article {
+article.lodging-pop {
+    border-radius: 0;
+    height: auto;
+    box-sizing: border-box;
     width: 100%;
-    border-radius: 0px;
 }
-
-.box-lodging-pop {
-    width: 90%;
+.all-boxes-pop {
+    display: flex;
+    flex-direction: column;
 }
-
-/* hebergement a marseille smartphone */
-
-.lodging {   
+a.box-pop {
+    width: 100%;
+    height: 144px;
+}
+#all-lodging {
+    gap: 0;
+}
+.lodging {
     background-color: #FFFFFF;
     width: 100%;
-    height: auto;
+    height: 1500px;
 }
-
-#all-boxes-lodg {
+.box-lodging {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-}
-
-.box-lodging {
-    height: 199px;
+    margin: 10px;
+    height: auto;
     width: 90%;
-    padding: 5px;
 }
-
-.lodging img {
-    height: 124px;
-    border-radius: 20px 20px 0 0;
-}
-
-button {
+.show-more {
     display: none;
 }
-
-/* activites a marseille smartphone*/
-
-.all-activities {
+#all-activities {
     width: 100%;
-    height: auto;
+    margin-top:30px ;
 }
-
-h2 {
-    margin-left: 22px;
-}
-
-#activities {
+.activities {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto ;
+}
+a.box-activity {
     width: 90%;
+    height: 190px;
+    margin-top: 10px;
+    position: relative;
 }
-
-.box-activity {
-    height: 199px;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
 .box-activity img {
     height: 134px;
 }
-
-.box-activity p {
-    top: 65%;
+#all-activities h2 {
+    margin-left: 20px;
+}
+.box-activity figcaption {
+    position: absolute;
+    bottom: 15px;
 }
 
 /*footer*/
