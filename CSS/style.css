@@ -2,11 +2,11 @@
   margin: 0 50px;
 }
 body {
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
   max-width: 1400px;
   width: 100%;
   margin: auto;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
 }
 a {
   color: #000;
@@ -86,12 +86,12 @@ h1 {
 }
 /* formulaire de recherche par ville */
 form { 
-  height: 49px;
-  width: 332px;
   display: flex;
   align-items: center;
   border: 1px solid #F2F2F2;  
   border-radius: 15px;
+  height: 49px;
+  width: 332px;
 }
     .fa-location-dot {
       height: 20px;
@@ -214,8 +214,8 @@ form {
           width: 91%;
           background-color: #FFFFFF;
           border-radius: 20px; 
-          font-size: 14px;
           box-shadow: 0px 3px 15px #D9D9D9;
+          font-size: 14px;
           position: relative;
         }
         a figure {
@@ -240,11 +240,11 @@ form {
                   bottom: 5%;
                 }
 /* hebergements classsique a marseille */
-    .lodging {   
+    .lodging {  
+      height: 626px;
+      width: 67%; 
       background-color: #F2F2F2;
       border-radius: 20px;
-      height: 626px;
-      width: 67%;
       position: relative;
     }
     .lodging h2 {
@@ -261,13 +261,13 @@ form {
           top: 100px;
         }
             .box-lodging {
-              background-color: #FFFFFF;
-              border-radius: 20px;
               height: 45%;
               width: 29%;
+              background-color: #FFFFFF;
+              border-radius: 20px;
+              box-shadow: 0px 3px 15px #D9D9D9;
               padding: 5px;
               font-size: 14px;
-              box-shadow: 0px 3px 15px #D9D9D9;
             }       
                 .lodging img {
                   height: 124px;
@@ -298,34 +298,34 @@ form {
   border-radius: 20px;
 }
     .box-activity {
-      background-color: #FFFFFF;
-      border-radius: 20px;
       width: 22%;
       height: 444px;
+      background-color: #FFFFFF;
+      border-radius: 20px;
       box-shadow: 0px 3px 15px #D9D9D9;
       position: relative;
     }
         .box-activity img {
           height: 389px;
-          border-radius: 20px 20px 0 0;
           width: 100%;
+          border-radius: 20px 20px 0 0;
           object-fit: cover;
         }
         .box-activity figcaption {
+          font-size: 19px;
+          font-weight: bold;
           position: absolute;
           left: 6%;
           bottom: 4%;
-          font-size: 19px;
-          font-weight: bold;
         }
 /* footer */
 footer {
-  padding-top: 20px;
-  background-color: #F2F2F2;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 50px; 
+  padding-top: 20px;
+  background-color: #F2F2F2;
 }
     footer ul {
       line-height: 2;
@@ -361,8 +361,8 @@ footer {
     .all-boxes-pop {
       display: flex;
       flex-direction: row;
-      gap: 30px;
       align-items: center;
+      gap: 30px;
       margin-top: 0;
     }
         a.box-pop {
@@ -403,10 +403,10 @@ footer {
   padding-bottom: 10px;  
 }
 .menu-list {
-  width: 100%;
   display: flex;
   flex-direction: row; 
   justify-content: space-around;
+  width: 100%;
   padding: 0;
   gap: 0;
 }
@@ -572,11 +572,11 @@ form {
             }
 /*footer*/
 footer {
-  width: 100%;
-  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100%;
+  margin: auto;
 }
     .global-info {
       margin-left: 20px;
